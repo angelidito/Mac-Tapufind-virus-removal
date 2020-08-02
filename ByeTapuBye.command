@@ -5,11 +5,11 @@ echo Removing Tapufind files from /Users/$USER/Library/LaunchAgents
 echo
 rm -r /Users/$USER/Library/LaunchAgents/*?apufind*
 echo
-echo Removed files (if have existed).
+echo Files have been removed (if have existed).
 
 while [[ true ]] ; do
 	echo 
-	echo "Safari's cache will be removed.
+	echo "Safari cache will be removed.
 Do you want to continue? [Y/n]"
 	read  
 	case "$REPLY" in 
@@ -17,6 +17,8 @@ Do you want to continue? [Y/n]"
 			echo
 			echo Removing /Library/Cahes/com.apple.Safari
 			rm -r /Library/Cahes/com.apple.Safari 
+			echo
+			echo Cache have been removed.
 			break
 			;;
 		n|N ) 
